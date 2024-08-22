@@ -12,8 +12,11 @@ struct HomeView: View {
         ZStack {
             Color.backgroundWW.ignoresSafeArea()
             
-            VStack(spacing: 16) {
+            VStack(spacing: 36) {
                 headerView()
+                
+                BalanceView_()
+                
                 Spacer()
             }
         }
