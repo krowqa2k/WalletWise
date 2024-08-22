@@ -14,6 +14,8 @@
 		C1D948E42C7778E40008F7CA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D948E32C7778E40008F7CA /* HomeView.swift */; };
 		C1D948E62C77797A0008F7CA /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D948E52C77797A0008F7CA /* HeaderView.swift */; };
 		C1D948EA2C777AF90008F7CA /* BalanceView .swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D948E92C777AF90008F7CA /* BalanceView .swift */; };
+		C1D948EC2C777FF80008F7CA /* IncomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D948EB2C777FF80008F7CA /* IncomeCell.swift */; };
+		C1D948EE2C7783870008F7CA /* ExpenseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D948ED2C7783870008F7CA /* ExpenseCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		C1D948E32C7778E40008F7CA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C1D948E52C77797A0008F7CA /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		C1D948E92C777AF90008F7CA /* BalanceView .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BalanceView .swift"; sourceTree = "<group>"; };
+		C1D948EB2C777FF80008F7CA /* IncomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeCell.swift; sourceTree = "<group>"; };
+		C1D948ED2C7783870008F7CA /* ExpenseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,8 @@
 			children = (
 				C1D948E52C77797A0008F7CA /* HeaderView.swift */,
 				C1D948E92C777AF90008F7CA /* BalanceView .swift */,
+				C1D948EB2C777FF80008F7CA /* IncomeCell.swift */,
+				C1D948ED2C7783870008F7CA /* ExpenseCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -230,6 +236,8 @@
 				C1D948E42C7778E40008F7CA /* HomeView.swift in Sources */,
 				C1D948EA2C777AF90008F7CA /* BalanceView .swift in Sources */,
 				C1D948C82C7770750008F7CA /* WalletWiseApp.swift in Sources */,
+				C1D948EE2C7783870008F7CA /* ExpenseCell.swift in Sources */,
+				C1D948EC2C777FF80008F7CA /* IncomeCell.swift in Sources */,
 				C1D948E62C77797A0008F7CA /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

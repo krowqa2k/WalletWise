@@ -12,10 +12,15 @@ struct HomeView: View {
         ZStack {
             Color.backgroundWW.ignoresSafeArea()
             
-            VStack(spacing: 36) {
+            VStack(spacing: 28) {
                 headerView()
                 
                 BalanceView_()
+                
+                HStack {
+                    IncomeCell()
+                    ExpenseCell()
+                }
                 
                 Spacer()
             }
