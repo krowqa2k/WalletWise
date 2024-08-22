@@ -15,20 +15,20 @@ struct BalanceView_: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 16)
-                .frame(width: width - 20, height: 150)
+                .frame(width: width - 20, height: 180)
                 .foregroundStyle(.cardWW)
                 .overlay(alignment: .topTrailing) {
                     ZStack {
                         Circle()
                             .fill(.expenseWW)
-                            .offset(x: 20, y: -40)
+                            .offset(x: 25, y: -45)
                             .clipped()
                             .cornerRadius(16)
                         
                         Image(systemName: "creditcard.fill")
-                            .font(.system(size: 40))
+                            .font(.system(size: 50))
                             .foregroundStyle(.backgroundWW)
-                            .offset(x: 15, y: -25)
+                            .offset(x: 18, y: -28)
                     }
                 }
             
