@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C1C1BC6F2C78BDB80072ABA3 /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C1BC6E2C78BDB80072ABA3 /* TransactionModel.swift */; };
+		C1C1BC742C78BE870072ABA3 /* AddTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C1BC732C78BE870072ABA3 /* AddTransactionView.swift */; };
 		C1D948C82C7770750008F7CA /* WalletWiseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D948C72C7770750008F7CA /* WalletWiseApp.swift */; };
 		C1D948CA2C7770750008F7CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D948C92C7770750008F7CA /* ContentView.swift */; };
 		C1D948CC2C7770760008F7CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1D948CB2C7770760008F7CA /* Assets.xcassets */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C1C1BC6E2C78BDB80072ABA3 /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
+		C1C1BC732C78BE870072ABA3 /* AddTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionView.swift; sourceTree = "<group>"; };
 		C1D948C42C7770750008F7CA /* WalletWise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletWise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1D948C72C7770750008F7CA /* WalletWiseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletWiseApp.swift; sourceTree = "<group>"; };
 		C1D948C92C7770750008F7CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +46,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C1C1BC722C78BE7A0072ABA3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1C1BC732C78BE870072ABA3 /* AddTransactionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C1D948BB2C7770750008F7CA = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +123,7 @@
 		C1D948D92C77755C0008F7CA /* Transactions */ = {
 			isa = PBXGroup;
 			children = (
+				C1C1BC722C78BE7A0072ABA3 /* View */,
 			);
 			path = Transactions;
 			sourceTree = "<group>";
@@ -143,6 +156,7 @@
 		C1D948DD2C7775EB0008F7CA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C1C1BC6E2C78BDB80072ABA3 /* TransactionModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -232,6 +246,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1C1BC742C78BE870072ABA3 /* AddTransactionView.swift in Sources */,
+				C1C1BC6F2C78BDB80072ABA3 /* TransactionModel.swift in Sources */,
 				C1D948CA2C7770750008F7CA /* ContentView.swift in Sources */,
 				C1D948E42C7778E40008F7CA /* HomeView.swift in Sources */,
 				C1D948EA2C777AF90008F7CA /* BalanceView .swift in Sources */,
