@@ -14,6 +14,14 @@ struct TransactionModel: Identifiable {
     let price: Double
     let date: Date
 
+    static var mock: TransactionModel {
+        TransactionModel(
+            name: "iPhone 15 Pro",
+            category: .shopping,
+            price: 1099.00,
+            date: .now
+        )
+    }
 }
 
 enum TransactionCategory: String, CaseIterable, Identifiable, Codable {
