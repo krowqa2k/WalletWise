@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TransactionCell_: View {
     
-    private var transaction: TransactionModel = .mock
+    var transaction: TransactionModel = .mock
     private let width: CGFloat = UIScreen.main.bounds.width
     
     var body: some View {

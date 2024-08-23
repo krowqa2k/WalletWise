@@ -10,6 +10,13 @@
 		C1C1BC6F2C78BDB80072ABA3 /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C1BC6E2C78BDB80072ABA3 /* TransactionModel.swift */; };
 		C1C1BC742C78BE870072ABA3 /* AddTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C1BC732C78BE870072ABA3 /* AddTransactionView.swift */; };
 		C1C1BC762C78CEF20072ABA3 /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C1BC752C78CEF20072ABA3 /* TransactionViewModel.swift */; };
+		C1C1BC782C78CF500072ABA3 /* AllTransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C1BC772C78CF500072ABA3 /* AllTransactionsView.swift */; };
+		C1C1BC7B2C78CFDB0072ABA3 /* TransactionCell .swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C1BC7A2C78CFDB0072ABA3 /* TransactionCell .swift */; };
+		C1C1BC7E2C78D3C20072ABA3 /* RandomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C1BC7D2C78D3C20072ABA3 /* RandomColor.swift */; };
+		C1C1BC802C78D4C80072ABA3 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C1BC7F2C78D4C80072ABA3 /* DateFormatter.swift */; };
+		C1C1BC832C78D84F0072ABA3 /* TabView .swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C1BC822C78D84F0072ABA3 /* TabView .swift */; };
+		C1C1BC882C78E1E50072ABA3 /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C1BC872C78E1E50072ABA3 /* StatisticsView.swift */; };
+		C1C1BC8A2C78E1ED0072ABA3 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C1BC892C78E1ED0072ABA3 /* UserView.swift */; };
 		C1D948C82C7770750008F7CA /* WalletWiseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D948C72C7770750008F7CA /* WalletWiseApp.swift */; };
 		C1D948CA2C7770750008F7CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D948C92C7770750008F7CA /* ContentView.swift */; };
 		C1D948CC2C7770760008F7CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1D948CB2C7770760008F7CA /* Assets.xcassets */; };
@@ -25,6 +32,13 @@
 		C1C1BC6E2C78BDB80072ABA3 /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
 		C1C1BC732C78BE870072ABA3 /* AddTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionView.swift; sourceTree = "<group>"; };
 		C1C1BC752C78CEF20072ABA3 /* TransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
+		C1C1BC772C78CF500072ABA3 /* AllTransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTransactionsView.swift; sourceTree = "<group>"; };
+		C1C1BC7A2C78CFDB0072ABA3 /* TransactionCell .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransactionCell .swift"; sourceTree = "<group>"; };
+		C1C1BC7D2C78D3C20072ABA3 /* RandomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColor.swift; sourceTree = "<group>"; };
+		C1C1BC7F2C78D4C80072ABA3 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		C1C1BC822C78D84F0072ABA3 /* TabView .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TabView .swift"; sourceTree = "<group>"; };
+		C1C1BC872C78E1E50072ABA3 /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		C1C1BC892C78E1ED0072ABA3 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		C1D948C42C7770750008F7CA /* WalletWise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletWise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1D948C72C7770750008F7CA /* WalletWiseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletWiseApp.swift; sourceTree = "<group>"; };
 		C1D948C92C7770750008F7CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +66,60 @@
 			isa = PBXGroup;
 			children = (
 				C1C1BC732C78BE870072ABA3 /* AddTransactionView.swift */,
+				C1C1BC772C78CF500072ABA3 /* AllTransactionsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C1C1BC792C78CF540072ABA3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C1C1BC7A2C78CFDB0072ABA3 /* TransactionCell .swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C1C1BC7C2C78D3B50072ABA3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C1C1BC7D2C78D3C20072ABA3 /* RandomColor.swift */,
+				C1C1BC7F2C78D4C80072ABA3 /* DateFormatter.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C1C1BC812C78D83C0072ABA3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1C1BC842C78D88B0072ABA3 /* Main */,
+				C1C1BC822C78D84F0072ABA3 /* TabView .swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C1C1BC842C78D88B0072ABA3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C1D948D72C7774EA0008F7CA /* Home */,
+				C1D948D92C77755C0008F7CA /* Transactions */,
+				C1D948DA2C77756D0008F7CA /* Statistics */,
+				C1D948DB2C7775760008F7CA /* User */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C1C1BC852C78E1C50072ABA3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1C1BC872C78E1E50072ABA3 /* StatisticsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C1C1BC862C78E1CB0072ABA3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1C1BC892C78E1ED0072ABA3 /* UserView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -75,15 +143,13 @@
 		C1D948C62C7770750008F7CA /* WalletWise */ = {
 			isa = PBXGroup;
 			children = (
+				C1C1BC812C78D83C0072ABA3 /* View */,
+				C1C1BC7C2C78D3B50072ABA3 /* Extensions */,
 				C1D948DE2C7775F10008F7CA /* ViewModel */,
 				C1D948DD2C7775EB0008F7CA /* Model */,
 				C1D948D52C7774D40008F7CA /* App */,
 				C1D948C72C7770750008F7CA /* WalletWiseApp.swift */,
 				C1D948D62C7774DC0008F7CA /* Manager */,
-				C1D948D72C7774EA0008F7CA /* Home */,
-				C1D948D92C77755C0008F7CA /* Transactions */,
-				C1D948DA2C77756D0008F7CA /* Statistics */,
-				C1D948DB2C7775760008F7CA /* User */,
 				C1D948C92C7770750008F7CA /* ContentView.swift */,
 				C1D948CB2C7770760008F7CA /* Assets.xcassets */,
 				C1D948CD2C7770760008F7CA /* Preview Content */,
@@ -125,6 +191,7 @@
 		C1D948D92C77755C0008F7CA /* Transactions */ = {
 			isa = PBXGroup;
 			children = (
+				C1C1BC792C78CF540072ABA3 /* Components */,
 				C1C1BC722C78BE7A0072ABA3 /* View */,
 			);
 			path = Transactions;
@@ -133,6 +200,7 @@
 		C1D948DA2C77756D0008F7CA /* Statistics */ = {
 			isa = PBXGroup;
 			children = (
+				C1C1BC852C78E1C50072ABA3 /* View */,
 			);
 			path = Statistics;
 			sourceTree = "<group>";
@@ -140,6 +208,7 @@
 		C1D948DB2C7775760008F7CA /* User */ = {
 			isa = PBXGroup;
 			children = (
+				C1C1BC862C78E1CB0072ABA3 /* View */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -252,12 +321,19 @@
 				C1C1BC742C78BE870072ABA3 /* AddTransactionView.swift in Sources */,
 				C1C1BC6F2C78BDB80072ABA3 /* TransactionModel.swift in Sources */,
 				C1D948CA2C7770750008F7CA /* ContentView.swift in Sources */,
+				C1C1BC7B2C78CFDB0072ABA3 /* TransactionCell .swift in Sources */,
 				C1D948E42C7778E40008F7CA /* HomeView.swift in Sources */,
+				C1C1BC882C78E1E50072ABA3 /* StatisticsView.swift in Sources */,
 				C1D948EA2C777AF90008F7CA /* BalanceView .swift in Sources */,
 				C1D948C82C7770750008F7CA /* WalletWiseApp.swift in Sources */,
 				C1D948EE2C7783870008F7CA /* ExpenseCell.swift in Sources */,
 				C1D948EC2C777FF80008F7CA /* IncomeCell.swift in Sources */,
+				C1C1BC782C78CF500072ABA3 /* AllTransactionsView.swift in Sources */,
+				C1C1BC802C78D4C80072ABA3 /* DateFormatter.swift in Sources */,
+				C1C1BC832C78D84F0072ABA3 /* TabView .swift in Sources */,
+				C1C1BC8A2C78E1ED0072ABA3 /* UserView.swift in Sources */,
 				C1D948E62C77797A0008F7CA /* HeaderView.swift in Sources */,
+				C1C1BC7E2C78D3C20072ABA3 /* RandomColor.swift in Sources */,
 				C1C1BC762C78CEF20072ABA3 /* TransactionViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
