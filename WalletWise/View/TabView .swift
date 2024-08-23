@@ -56,7 +56,7 @@ struct TabView: View {
                 Image(systemName: "chart.line.uptrend.xyaxis.circle.fill")
                     .font(.title2)
             }
-            .foregroundStyle(self.index == 2 ? .expenseWW : .white)
+            .foregroundStyle(self.index == 3 ? .expenseWW : .white)
             
             Spacer(minLength: 0)
             
@@ -66,7 +66,7 @@ struct TabView: View {
                 Image(systemName: "person.fill")
                     .font(.title2)
             }
-            .foregroundStyle(self.index == 3 ? .expenseWW : .white)
+            .foregroundStyle(self.index == 4 ? .expenseWW : .white)
         }
         .padding(.horizontal, 35)
         .background(Color.backgroundWW)
