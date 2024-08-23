@@ -34,6 +34,7 @@ struct HomeView: View {
                 Spacer(minLength: 0)
                 
                 TabView(index: $index)
+                    .frame(height: 30)
             }
         }
     }
