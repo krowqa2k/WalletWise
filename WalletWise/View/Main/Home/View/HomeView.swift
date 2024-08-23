@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     
-    @StateObject private var viewModel = TransactionViewModel()
+    @EnvironmentObject private var viewModel: TransactionViewModel
     @State var index: Int
     
     var body: some View {
@@ -22,7 +22,7 @@ struct HomeView: View {
                 case 1:
                     AllTransactionsView()
                 case 2:
-                    AddTransactionView()
+                    AddTransactionView(index: $index)
                 case 3:
                     StatisticsView()
                 case 4:
@@ -67,7 +67,7 @@ struct HomeView: View {
             
             ScrollView(.vertical) {
                 ForEach(viewModel.recentTransactions.prefix(12)){ transaction in
-                    TransactionCell_(transaction: transaction)
+                    TransactionCell(transaction: transaction)
                 }
             }
             .scrollIndicators(.hidden)
@@ -77,4 +77,5 @@ struct HomeView: View {
 
 #Preview {
     HomeView(index: 0)
+        .environmentObject(TransactionViewModel())
 }

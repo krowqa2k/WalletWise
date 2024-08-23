@@ -9,11 +9,12 @@ import SwiftUI
 
 struct AddTransactionView: View {
     
-    @StateObject private var viewModel = TransactionViewModel()
+    @EnvironmentObject private var viewModel: TransactionViewModel
     @State private var transactionName: String = ""
     @State private var transactionCategory: TransactionCategory = .shopping
     @State private var transactionPrice: String = ""
     @State private var transactionDate: Date?
+    @Binding var index: Int
     @FocusState private var isFocused: Bool
     
     var body: some View {
@@ -31,6 +32,7 @@ struct AddTransactionView: View {
                     
                     Button(action: {
                         saveButton()
+                        self.index = 0
                     }, label: {
                         Image(systemName: "bag.badge.plus")
                             .font(.title2)
@@ -107,5 +109,6 @@ struct AddTransactionView: View {
 }
 
 #Preview {
-    AddTransactionView()
+    AddTransactionView(index: .constant(2))
+        .environmentObject(TransactionViewModel())
 }

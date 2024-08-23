@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct WalletWiseApp: App {
+    
+    @StateObject private var viewModel = TransactionViewModel()
+    
     var body: some Scene {
         WindowGroup {
             HomeView(index: 0)
+                .environmentObject(viewModel)
         }
     }
 }

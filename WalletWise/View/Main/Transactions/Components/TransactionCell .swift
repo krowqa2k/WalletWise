@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TransactionCell_: View {
+struct TransactionCell: View {
     
     var transaction: TransactionModel = .mock
     private let width: CGFloat = UIScreen.main.bounds.width
@@ -52,5 +52,5 @@ struct TransactionCell_: View {
 }
 
 #Preview {
-    TransactionCell_()
+    TransactionCell()
 }
