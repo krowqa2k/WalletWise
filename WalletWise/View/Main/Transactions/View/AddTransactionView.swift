@@ -13,7 +13,7 @@ struct AddTransactionView: View {
     @State private var transactionName: String = ""
     @State private var transactionCategory: TransactionCategory = .shopping
     @State private var transactionPrice: String = ""
-    @State private var transactionDate: Date?
+    @State private var transactionDate: Date? = .now
     @Binding var index: Int
     @FocusState private var isFocused: Bool
     
