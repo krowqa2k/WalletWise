@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C1C1BC6F2C78BDB80072ABA3 /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C1BC6E2C78BDB80072ABA3 /* TransactionModel.swift */; };
 		C1C1BC742C78BE870072ABA3 /* AddTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C1BC732C78BE870072ABA3 /* AddTransactionView.swift */; };
+		C1C1BC762C78CEF20072ABA3 /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C1BC752C78CEF20072ABA3 /* TransactionViewModel.swift */; };
 		C1D948C82C7770750008F7CA /* WalletWiseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D948C72C7770750008F7CA /* WalletWiseApp.swift */; };
 		C1D948CA2C7770750008F7CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D948C92C7770750008F7CA /* ContentView.swift */; };
 		C1D948CC2C7770760008F7CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1D948CB2C7770760008F7CA /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		C1C1BC6E2C78BDB80072ABA3 /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
 		C1C1BC732C78BE870072ABA3 /* AddTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionView.swift; sourceTree = "<group>"; };
+		C1C1BC752C78CEF20072ABA3 /* TransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
 		C1D948C42C7770750008F7CA /* WalletWise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletWise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1D948C72C7770750008F7CA /* WalletWiseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletWiseApp.swift; sourceTree = "<group>"; };
 		C1D948C92C7770750008F7CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 		C1D948DE2C7775F10008F7CA /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				C1C1BC752C78CEF20072ABA3 /* TransactionViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				C1D948EE2C7783870008F7CA /* ExpenseCell.swift in Sources */,
 				C1D948EC2C777FF80008F7CA /* IncomeCell.swift in Sources */,
 				C1D948E62C77797A0008F7CA /* HeaderView.swift in Sources */,
+				C1C1BC762C78CEF20072ABA3 /* TransactionViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
