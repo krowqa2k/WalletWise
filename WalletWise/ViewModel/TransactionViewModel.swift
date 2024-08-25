@@ -45,4 +45,17 @@ class TransactionViewModel: ObservableObject {
     func deleteExpense(indexSet: IndexSet){
         transactions.remove(atOffsets: indexSet)
     }
+    
+    func groupTransactionByDay() -> [Date: [TransactionModel]] {
+        guard !transactions.isEmpty else { return [:] }
+        
+        let groupedTransactions = Dictionary(grouping: transactions, by: { transaction -> Date in
+            let calendar = Calendar.current
+            let components = calendar.dateComponents([.year,.month,.day], from: transaction.date)
+            
+            return calendar.date(from: components) ?? transaction.date
+        })
+        
+        return groupedTransactions
+    }
 }
