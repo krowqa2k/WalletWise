@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C1209F952C7B4EC200D48EC6 /* MonthlyExpenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1209F942C7B4EC200D48EC6 /* MonthlyExpenses.swift */; };
 		C1C1BC6F2C78BDB80072ABA3 /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C1BC6E2C78BDB80072ABA3 /* TransactionModel.swift */; };
 		C1C1BC742C78BE870072ABA3 /* AddTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C1BC732C78BE870072ABA3 /* AddTransactionView.swift */; };
 		C1C1BC762C78CEF20072ABA3 /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C1BC752C78CEF20072ABA3 /* TransactionViewModel.swift */; };
@@ -24,11 +25,12 @@
 		C1D948E42C7778E40008F7CA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D948E32C7778E40008F7CA /* HomeView.swift */; };
 		C1D948E62C77797A0008F7CA /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D948E52C77797A0008F7CA /* HeaderView.swift */; };
 		C1D948EA2C777AF90008F7CA /* BalanceView .swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D948E92C777AF90008F7CA /* BalanceView .swift */; };
-		C1D948EC2C777FF80008F7CA /* IncomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D948EB2C777FF80008F7CA /* IncomeCell.swift */; };
-		C1D948EE2C7783870008F7CA /* ExpenseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D948ED2C7783870008F7CA /* ExpenseCell.swift */; };
+		C1D948EC2C777FF80008F7CA /* DailyExpenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D948EB2C777FF80008F7CA /* DailyExpenses.swift */; };
+		C1D948EE2C7783870008F7CA /* WeeklyExpenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D948ED2C7783870008F7CA /* WeeklyExpenses.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C1209F942C7B4EC200D48EC6 /* MonthlyExpenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyExpenses.swift; sourceTree = "<group>"; };
 		C1C1BC6E2C78BDB80072ABA3 /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
 		C1C1BC732C78BE870072ABA3 /* AddTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionView.swift; sourceTree = "<group>"; };
 		C1C1BC752C78CEF20072ABA3 /* TransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
@@ -47,8 +49,8 @@
 		C1D948E32C7778E40008F7CA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C1D948E52C77797A0008F7CA /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		C1D948E92C777AF90008F7CA /* BalanceView .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BalanceView .swift"; sourceTree = "<group>"; };
-		C1D948EB2C777FF80008F7CA /* IncomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeCell.swift; sourceTree = "<group>"; };
-		C1D948ED2C7783870008F7CA /* ExpenseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCell.swift; sourceTree = "<group>"; };
+		C1D948EB2C777FF80008F7CA /* DailyExpenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyExpenses.swift; sourceTree = "<group>"; };
+		C1D948ED2C7783870008F7CA /* WeeklyExpenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyExpenses.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,8 +220,9 @@
 			children = (
 				C1D948E52C77797A0008F7CA /* HeaderView.swift */,
 				C1D948E92C777AF90008F7CA /* BalanceView .swift */,
-				C1D948EB2C777FF80008F7CA /* IncomeCell.swift */,
-				C1D948ED2C7783870008F7CA /* ExpenseCell.swift */,
+				C1D948EB2C777FF80008F7CA /* DailyExpenses.swift */,
+				C1D948ED2C7783870008F7CA /* WeeklyExpenses.swift */,
+				C1209F942C7B4EC200D48EC6 /* MonthlyExpenses.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -326,10 +329,11 @@
 				C1C1BC882C78E1E50072ABA3 /* StatisticsView.swift in Sources */,
 				C1D948EA2C777AF90008F7CA /* BalanceView .swift in Sources */,
 				C1D948C82C7770750008F7CA /* WalletWiseApp.swift in Sources */,
-				C1D948EE2C7783870008F7CA /* ExpenseCell.swift in Sources */,
-				C1D948EC2C777FF80008F7CA /* IncomeCell.swift in Sources */,
+				C1D948EE2C7783870008F7CA /* WeeklyExpenses.swift in Sources */,
+				C1D948EC2C777FF80008F7CA /* DailyExpenses.swift in Sources */,
 				C1C1BC782C78CF500072ABA3 /* AllTransactionsView.swift in Sources */,
 				C1C1BC802C78D4C80072ABA3 /* DateFormatter.swift in Sources */,
+				C1209F952C7B4EC200D48EC6 /* MonthlyExpenses.swift in Sources */,
 				C1C1BC832C78D84F0072ABA3 /* TabView .swift in Sources */,
 				C1C1BC8A2C78E1ED0072ABA3 /* UserView.swift in Sources */,
 				C1D948E62C77797A0008F7CA /* HeaderView.swift in Sources */,

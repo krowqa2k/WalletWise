@@ -46,17 +46,16 @@ struct HomeView: View {
             BalanceView_()
             
             HStack {
-                IncomeCell()
-                ExpenseCell()
+                DailyExpenses()
+                WeeklyExpenses()
+                MonthlyExpenses()
             }
             
             recentTransactions
             .frame(maxWidth: .infinity, alignment: .leading)
-            
-            
-            
-            Spacer()
+            .frame(maxHeight: .infinity)
         }
+        .padding(.bottom)
     }
     
     private var recentTransactions: some View {
@@ -67,7 +66,7 @@ struct HomeView: View {
                 .padding(.leading)
             
             ScrollView(.vertical) {
-                ForEach(viewModel.recentTransactions.prefix(12)){ transaction in
+                ForEach(viewModel.transactions.prefix(12)){ transaction in
                     TransactionCell(transaction: transaction)
                 }
             }

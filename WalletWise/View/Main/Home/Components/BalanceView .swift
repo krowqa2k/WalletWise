@@ -10,7 +10,7 @@ import SwiftUI
 struct BalanceView_: View {
     
     let width: CGFloat = UIScreen.main.bounds.width
-    @State private var userBalance: Double = 327.76
+    @EnvironmentObject private var viewModel: TransactionViewModel
     
     var body: some View {
         ZStack {
@@ -33,12 +33,12 @@ struct BalanceView_: View {
                 }
             
             VStack(alignment: .leading, spacing: 6){
-                Text("Your Balance")
+                Text("Your Expenses")
                     .font(.title3)
                     .fontWeight(.light)
                     .foregroundStyle(.textWW.opacity(0.6))
                 
-                Text("$\(userBalance.formatted())")
+                Text("$\(viewModel.userExpenses.formatted())")
                     .font(.system(size: 40))
                     .foregroundStyle(.textWW)
                     .fontWeight(.bold)
@@ -55,5 +55,6 @@ struct BalanceView_: View {
     ZStack {
         Color.backgroundWW.ignoresSafeArea()
         BalanceView_()
+            .environmentObject(TransactionViewModel())
     }
 }
