@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct TransactionModel: Identifiable {
+struct TransactionModel: Identifiable, Codable {
     var id = UUID().uuidString
     let name: String
     let category: TransactionCategory
