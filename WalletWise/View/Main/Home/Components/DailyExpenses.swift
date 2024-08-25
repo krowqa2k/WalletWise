@@ -9,10 +9,12 @@ import SwiftUI
 
 struct DailyExpenses: View {
     
+    @EnvironmentObject private var viewModel: TransactionViewModel
     let width: CGFloat = UIScreen.main.bounds.width
-    @State private var dailyExpense: Double = 24.00
     
     var body: some View {
+        let dailyExpense = viewModel.sumTransactionsForDay(date: Date())
+        
         ZStack {
             RoundedRectangle(cornerRadius: 24)
                 .foregroundStyle(.textWW)
@@ -37,5 +39,6 @@ struct DailyExpenses: View {
     ZStack {
         Color.backgroundWW.ignoresSafeArea()
         DailyExpenses()
+            .environmentObject(TransactionViewModel())
     }
 }

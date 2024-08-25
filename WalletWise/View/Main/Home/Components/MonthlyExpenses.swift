@@ -9,10 +9,12 @@ import SwiftUI
 
 struct MonthlyExpenses: View {
     
+    @EnvironmentObject private var viewModel: TransactionViewModel
     let width: CGFloat = UIScreen.main.bounds.width
-    @State private var monthlyExpense: Double = 1612
     
     var body: some View {
+        let monthlyExpense = viewModel.sumTransactionsForMonth(date: Date())
+        
         ZStack {
             RoundedRectangle(cornerRadius: 24)
                 .foregroundStyle(.textWW)
@@ -35,4 +37,5 @@ struct MonthlyExpenses: View {
 
 #Preview {
     MonthlyExpenses()
+        .environmentObject(TransactionViewModel())
 }

@@ -9,10 +9,12 @@ import SwiftUI
 
 struct WeeklyExpenses: View {
     
+    @EnvironmentObject private var viewModel: TransactionViewModel
     let width: CGFloat = UIScreen.main.bounds.width
-    @State private var weeklyExpense: Double = 403.00
     
     var body: some View {
+        let weeklyExpense = viewModel.sumTransactionsForWeek(date: Date())
+        
         ZStack {
             RoundedRectangle(cornerRadius: 24)
                 .foregroundStyle(.textWW)
@@ -35,4 +37,5 @@ struct WeeklyExpenses: View {
 
 #Preview {
     WeeklyExpenses()
+        .environmentObject(TransactionViewModel())
 }
