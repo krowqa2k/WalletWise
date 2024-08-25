@@ -26,7 +26,7 @@ struct HomeView: View {
                 case 3:
                     StatisticsView()
                 case 4:
-                    UserView()
+                    AppInfoView()
                 default:
                     homeView
                 }
