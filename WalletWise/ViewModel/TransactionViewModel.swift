@@ -9,7 +9,7 @@ import Foundation
 
 class TransactionViewModel: ObservableObject {
     
-    @Published var transactions: [TransactionModel] = []
+    @Published private(set) var transactions: [TransactionModel] = []
     var userExpenses: Double {
         transactions.reduce(0) { $0 + $1.price }
     }
@@ -57,5 +57,43 @@ class TransactionViewModel: ObservableObject {
         })
         
         return groupedTransactions
+    }
+    
+    func sumTransactionsForDay(date: Date) -> Double {
+        let calendar = Calendar.current
+        let transactionsForDay = transactions.filter({ transaction in
+            return calendar.isDate(transaction.date, inSameDayAs: date)
+        })
+        
+        return transactionsForDay.reduce(0) { $0 + $1.price }
+    }
+    
+    func sumTransactionsForWeek(date: Date) -> Double {
+        let calendar = Calendar.current
+        let weekOfTheYear = calendar.component(.weekOfYear, from: date)
+        let year = calendar.component(.yearForWeekOfYear, from: date)
+        
+        let transactionsForTheWeek = transactions.filter({ transaction in
+            let transactionWeek = calendar.component(.weekOfYear, from: transaction.date)
+            let transactionYear = calendar.component(.yearForWeekOfYear, from: transaction.date)
+            
+            return transactionWeek == weekOfTheYear && transactionYear == year
+        })
+        
+        return transactionsForTheWeek.reduce(0) { $0 + $1.price }
+    }
+    
+    func sumTransactionsForMonth(date: Date) -> Double {
+        let calendar = Calendar.current
+        let month = calendar.component(.month, from: date)
+        let year = calendar.component(.year, from: date)
+        
+        let transactionsForMonth = transactions.filter({ transaction in
+            let transactionMonth = calendar.component(.month, from: transaction.date)
+            let transactionYear = calendar.component(.year, from: transaction.date)
+            return transactionMonth == month && transactionYear == year
+        })
+        
+        return transactionsForMonth.reduce(0) { $0 + $1.price }
     }
 }
