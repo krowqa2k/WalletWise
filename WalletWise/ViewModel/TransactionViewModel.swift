@@ -41,4 +41,8 @@ class TransactionViewModel: ObservableObject {
         self.transactions = savedExpenses
         self.transactions.sort(by: { $0.date > $1.date })
     }
+    
+    func deleteExpense(indexSet: IndexSet){
+        transactions.remove(atOffsets: indexSet)
+    }
 }
