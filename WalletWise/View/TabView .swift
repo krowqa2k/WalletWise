@@ -63,7 +63,7 @@ struct TabView: View {
             Button {
                 self.index = 4
             } label: {
-                Image(systemName: "person.fill")
+                Image(systemName: "info.circle")
                     .font(.title2)
             }
             .foregroundStyle(self.index == 4 ? .expenseWW : .white)
