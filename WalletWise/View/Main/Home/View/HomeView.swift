@@ -66,7 +66,7 @@ struct HomeView: View {
                 .padding(.leading)
             
             ScrollView(.vertical) {
-                ForEach(viewModel.transactions.prefix(12)){ transaction in
+                ForEach(viewModel.transactions.prefix(6)){ transaction in
                     TransactionCell(transaction: transaction)
                 }
             }
