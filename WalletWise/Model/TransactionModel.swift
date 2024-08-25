@@ -49,7 +49,7 @@ enum TransactionCategory: String, CaseIterable, Identifiable, Codable {
         case .transportation:
             return "car.fill"
         case .entertainment:
-            return "gamecontroller.fill"
+            return "party.popper.fill"
         case .diningOut:
             return "fork.knife"
         case .healthAndFitness:
