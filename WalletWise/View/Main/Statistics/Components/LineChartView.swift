@@ -50,7 +50,7 @@ struct LineChartView: View {
                     .padding(.horizontal)
                 }
             } else {
-                Text("Brak danych do wyświetlenia.")
+                Text("No data available")
                     .foregroundColor(.textWW)
             }
         }
@@ -80,7 +80,7 @@ struct LineChartView: View {
     
     func formatDate(date: Date) -> String {
         let formatter = DateFormatter()
-        formatter.dateFormat = "dd MMM" 
+        formatter.dateFormat = "dd MMM"
         return formatter.string(from: date)
     }
 }
