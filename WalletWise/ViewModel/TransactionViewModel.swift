@@ -33,6 +33,14 @@ class TransactionViewModel: ObservableObject {
         }
     }
     
+    func removeAll() {
+        guard transactions.isEmpty else {
+            transactions.removeAll()
+            saveExpenses()
+            return
+        }
+    }
+    
     func getExpenses() {
         guard let data = UserDefaults.standard.data(forKey: expenseKey),
               let savedExpenses = try? JSONDecoder().decode([TransactionModel].self, from: data)
