@@ -44,6 +44,7 @@ class TransactionViewModel: ObservableObject {
     
     func deleteExpense(indexSet: IndexSet){
         transactions.remove(atOffsets: indexSet)
+        saveExpenses()
     }
     
     func groupTransactionByDay() -> [Date: [TransactionModel]] {
