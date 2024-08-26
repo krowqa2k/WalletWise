@@ -23,6 +23,14 @@ struct AllTransactionsView: View {
                     
                     Spacer(minLength: 0)
                     
+                    Button(action: {
+                        viewModel.removeAll()
+                    }, label: {
+                        Text("Remove All")
+                            .font(.headline)
+                            .foregroundStyle(.red)
+                    })
+                    
                     Image(systemName: "creditcard.fill")
                         .font(.title2)
                         .fontWeight(.medium)
