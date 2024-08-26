@@ -11,11 +11,19 @@ import SwiftUI
 struct WalletWiseApp: App {
     
     @StateObject private var viewModel = TransactionViewModel()
+    @StateObject private var userSettings = UserSettings()
     
     var body: some Scene {
         WindowGroup {
-            HomeView(index: 0)
-                .environmentObject(viewModel)
+            if LaunchManager.isFirstLaunch {
+                FirstLaunchView()
+                    .environmentObject(userSettings)
+                    .environmentObject(viewModel)
+            } else {
+                HomeView(index: 0)
+                    .environmentObject(viewModel)
+                    .environmentObject(userSettings)
+            }
         }
     }
 }
