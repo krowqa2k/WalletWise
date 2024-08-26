@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct headerView: View {
+    
+    @EnvironmentObject private var userSettings: UserSettings
+    
     var body: some View {
         HStack {
             VStack(alignment: .leading) {
@@ -15,7 +18,7 @@ struct headerView: View {
                     .foregroundStyle(.textWW.opacity(0.5))
                     .font(.callout)
                 
-                Text("Mateusz Krówczyński")
+                Text(userSettings.userName.isEmpty ? "" : userSettings.userName)
                     .foregroundStyle(.textWW)
                     .font(.system(size: 18))
                     .fontWeight(.semibold)
@@ -38,5 +41,6 @@ struct headerView: View {
     ZStack {
         Color.backgroundWW.ignoresSafeArea()
         headerView()
+            .environmentObject(UserSettings())
     }
 }

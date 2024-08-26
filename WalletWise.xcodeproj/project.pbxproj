@@ -12,6 +12,9 @@
 		C12D09642C7CC2E8002A2331 /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12D09632C7CC2E8002A2331 /* LineChartView.swift */; };
 		C12D096A2C7CCB69002A2331 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = C12D09692C7CCB69002A2331 /* SwiftUICharts */; };
 		C12D096C2C7CDCFB002A2331 /* TopSpendingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12D096B2C7CDCFB002A2331 /* TopSpendingCell.swift */; };
+		C1AB0E242C7CFA1D00BCE30E /* FirstLaunchView .swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AB0E232C7CFA1D00BCE30E /* FirstLaunchView .swift */; };
+		C1AB0E262C7D032700BCE30E /* LaunchManager .swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AB0E252C7D032700BCE30E /* LaunchManager .swift */; };
+		C1AB0E282C7D049900BCE30E /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AB0E272C7D049900BCE30E /* UserSettings.swift */; };
 		C1C1BC6F2C78BDB80072ABA3 /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C1BC6E2C78BDB80072ABA3 /* TransactionModel.swift */; };
 		C1C1BC742C78BE870072ABA3 /* AddTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C1BC732C78BE870072ABA3 /* AddTransactionView.swift */; };
 		C1C1BC762C78CEF20072ABA3 /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C1BC752C78CEF20072ABA3 /* TransactionViewModel.swift */; };
@@ -38,6 +41,9 @@
 		C1209F962C7B56B500D48EC6 /* TransactionListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListCell.swift; sourceTree = "<group>"; };
 		C12D09632C7CC2E8002A2331 /* LineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
 		C12D096B2C7CDCFB002A2331 /* TopSpendingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopSpendingCell.swift; sourceTree = "<group>"; };
+		C1AB0E232C7CFA1D00BCE30E /* FirstLaunchView .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FirstLaunchView .swift"; sourceTree = "<group>"; };
+		C1AB0E252C7D032700BCE30E /* LaunchManager .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LaunchManager .swift"; sourceTree = "<group>"; };
+		C1AB0E272C7D049900BCE30E /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 		C1C1BC6E2C78BDB80072ABA3 /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
 		C1C1BC732C78BE870072ABA3 /* AddTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionView.swift; sourceTree = "<group>"; };
 		C1C1BC752C78CEF20072ABA3 /* TransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
@@ -113,6 +119,7 @@
 			children = (
 				C1C1BC842C78D88B0072ABA3 /* Main */,
 				C1C1BC822C78D84F0072ABA3 /* TabView .swift */,
+				C1AB0E232C7CFA1D00BCE30E /* FirstLaunchView .swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -195,6 +202,7 @@
 		C1D948D62C7774DC0008F7CA /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				C1AB0E252C7D032700BCE30E /* LaunchManager .swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -258,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				C1C1BC752C78CEF20072ABA3 /* TransactionViewModel.swift */,
+				C1AB0E272C7D049900BCE30E /* UserSettings.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -347,6 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1C1BC742C78BE870072ABA3 /* AddTransactionView.swift in Sources */,
+				C1AB0E242C7CFA1D00BCE30E /* FirstLaunchView .swift in Sources */,
 				C1C1BC6F2C78BDB80072ABA3 /* TransactionModel.swift in Sources */,
 				C1D948CA2C7770750008F7CA /* ContentView.swift in Sources */,
 				C1C1BC7B2C78CFDB0072ABA3 /* TransactionCell .swift in Sources */,
@@ -354,9 +364,11 @@
 				C12D096C2C7CDCFB002A2331 /* TopSpendingCell.swift in Sources */,
 				C1C1BC882C78E1E50072ABA3 /* StatisticsView.swift in Sources */,
 				C1D948EA2C777AF90008F7CA /* BalanceView .swift in Sources */,
+				C1AB0E262C7D032700BCE30E /* LaunchManager .swift in Sources */,
 				C1D948C82C7770750008F7CA /* WalletWiseApp.swift in Sources */,
 				C1209F972C7B56B500D48EC6 /* TransactionListCell.swift in Sources */,
 				C1D948EE2C7783870008F7CA /* WeeklyExpenses.swift in Sources */,
+				C1AB0E282C7D049900BCE30E /* UserSettings.swift in Sources */,
 				C1D948EC2C777FF80008F7CA /* DailyExpenses.swift in Sources */,
 				C12D09642C7CC2E8002A2331 /* LineChartView.swift in Sources */,
 				C1C1BC782C78CF500072ABA3 /* AllTransactionsView.swift in Sources */,
