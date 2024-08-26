@@ -1,4 +1,4 @@
-Wallet Wise is an expense management app that allows users to track their transactions and visualize data using Charts. The app is built using SwiftUI and stores data locally using UserDefaults. The app follows the MVVM (Model-View-ViewModel) architecture for a clean and maintainable codebase.
+💳 Wallet Wise is an expense management app that allows users to track their transactions and visualize data using Charts. The app is built using SwiftUI and stores data locally using UserDefaults. The app follows the MVVM (Model-View-ViewModel) architecture for a clean and maintainable codebase.
 
 Features:
 
@@ -7,7 +7,7 @@ Features:
 - Charts: Visualize expenses using line chart.
 - Clear All Transactions: Remove all transactions with a single button click.
 
-Technologies Used:
+Technologies Used 🛠️:
 
 - SwiftUI: For building the user interface.
 - MVVM Architecture: For a clean separation of concerns and improved testability.
