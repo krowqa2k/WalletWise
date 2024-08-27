@@ -6,53 +6,36 @@
 //
 
 import Foundation
+import CoreData
 
 class TransactionViewModel: ObservableObject {
     
     @Published private(set) var transactions: [TransactionModel] = []
+    private let transactionsDataManager = TransactionsManager()
+    
     var userExpenses: Double {
         transactions.reduce(0) { $0 + $1.price }
     }
     
     init(){
-        getExpenses()
+        fetchTransactionsFromCoreData()
     }
-    
-    let expenseKey: String = "expense_item"
     
     func addTransaction(name: String, price: Double, category: TransactionCategory, date: Date) {
         let newTransaction = TransactionModel(name: name, category: category, price: price, date: date)
-        transactions.append(newTransaction)
-        transactions.sort(by:  { $0.date > $1.date })
-        saveExpenses()
+        transactionsDataManager.addTransaction(transaction: newTransaction)
+        fetchTransactionsFromCoreData()
     }
     
-    func saveExpenses() {
-        if let encodedData = try? JSONEncoder().encode(transactions) {
-            UserDefaults.standard.setValue(encodedData, forKey: expenseKey)
+    func fetchTransactionsFromCoreData() {
+        transactionsDataManager.fetchTransactions()
+        self.transactions = transactionsDataManager.savedEntities.map { entity in
+            TransactionModel(id: entity.id ?? UUID().uuidString,
+                             name: entity.name ?? "",
+                             category: TransactionCategory(rawValue: entity.category ?? "") ?? .shopping,
+                             price: entity.price,
+                             date: entity.date ?? Date())
         }
-    }
-    
-    func removeAll() {
-        guard transactions.isEmpty else {
-            transactions.removeAll()
-            saveExpenses()
-            return
-        }
-    }
-    
-    func getExpenses() {
-        guard let data = UserDefaults.standard.data(forKey: expenseKey),
-              let savedExpenses = try? JSONDecoder().decode([TransactionModel].self, from: data)
-        else { return }
-        
-        self.transactions = savedExpenses
-        self.transactions.sort(by: { $0.date > $1.date })
-    }
-    
-    func deleteExpense(indexSet: IndexSet){
-        transactions.remove(atOffsets: indexSet)
-        saveExpenses()
     }
     
     func groupTransactionByDay() -> [Date: [TransactionModel]] {
@@ -66,6 +49,16 @@ class TransactionViewModel: ObservableObject {
         })
         
         return groupedTransactions
+    }
+    
+    func deleteExpense(indexSet: IndexSet) {
+        transactionsDataManager.deleteTransaction(indexSet: indexSet)
+        fetchTransactionsFromCoreData()
+    }
+    
+    func removeAll() {
+        transactionsDataManager.removeAllTransactions()
+        fetchTransactionsFromCoreData()
     }
     
     func sumTransactionsForDay(date: Date) -> Double {
