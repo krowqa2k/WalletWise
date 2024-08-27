@@ -13,10 +13,8 @@ Technologies Used 🛠️:
 - MVVM Architecture: For a clean separation of concerns and improved testability.
 - Xcode 15.4: The development environment used for building the app.
 - SwiftUICharts: package used for more responsible and good looking chart.
-- UserDefaults: for storing transactions and user data
-
-Coming later: 
-- UserDefaults transactions storage switched to CoreData
+- CoreData: for storing user's transactions. 
+- UserDefaults: for storing user's full name. 
 
 App Demonstration:
 
