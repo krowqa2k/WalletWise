@@ -10,6 +10,7 @@ import SwiftUI
 struct AllTransactionsView: View {
     
     @EnvironmentObject private var viewModel: TransactionViewModel
+    @State private var showAlert: Bool = false
     
     var body: some View {
         ZStack {
@@ -24,7 +25,7 @@ struct AllTransactionsView: View {
                     Spacer(minLength: 0)
                     
                     Button(action: {
-                        viewModel.removeAll()
+                        showAlert.toggle()
                     }, label: {
                         Text("Remove All")
                             .font(.headline)
@@ -57,6 +58,13 @@ struct AllTransactionsView: View {
                 
                 Spacer()
             }
+        }
+        .alert("Are You Sure?", isPresented: $showAlert) {
+            Button("Delete", role: .destructive) {
+                viewModel.removeAll()
+            }
+            
+            Button("Cancel", role: .cancel) { }
         }
     }
 }
