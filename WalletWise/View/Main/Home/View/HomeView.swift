@@ -78,4 +78,5 @@ struct HomeView: View {
 #Preview {
     HomeView(index: 0)
         .environmentObject(TransactionViewModel())
+        .environmentObject(UserSettings())
 }

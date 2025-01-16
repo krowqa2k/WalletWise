@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -27,7 +27,6 @@
 		C1C1BC832C78D84F0072ABA3 /* TabView .swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C1BC822C78D84F0072ABA3 /* TabView .swift */; };
 		C1C1BC882C78E1E50072ABA3 /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C1BC872C78E1E50072ABA3 /* StatisticsView.swift */; };
 		C1C1BC8A2C78E1ED0072ABA3 /* AppInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C1BC892C78E1ED0072ABA3 /* AppInfoView.swift */; };
-		C1D948C82C7770750008F7CA /* WalletWiseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D948C72C7770750008F7CA /* WalletWiseApp.swift */; };
 		C1D948CA2C7770750008F7CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D948C92C7770750008F7CA /* ContentView.swift */; };
 		C1D948CC2C7770760008F7CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1D948CB2C7770760008F7CA /* Assets.xcassets */; };
 		C1D948CF2C7770760008F7CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1D948CE2C7770760008F7CA /* Preview Assets.xcassets */; };
@@ -59,7 +58,6 @@
 		C1C1BC872C78E1E50072ABA3 /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
 		C1C1BC892C78E1ED0072ABA3 /* AppInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoView.swift; sourceTree = "<group>"; };
 		C1D948C42C7770750008F7CA /* WalletWise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletWise.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C1D948C72C7770750008F7CA /* WalletWiseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletWiseApp.swift; sourceTree = "<group>"; };
 		C1D948C92C7770750008F7CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C1D948CB2C7770760008F7CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1D948CE2C7770760008F7CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -69,6 +67,10 @@
 		C1D948EB2C777FF80008F7CA /* DailyExpenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyExpenses.swift; sourceTree = "<group>"; };
 		C1D948ED2C7783870008F7CA /* WeeklyExpenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyExpenses.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		BBA27C382D399179002F3383 /* App */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = App; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C1D948C12C7770750008F7CA /* Frameworks */ = {
@@ -183,12 +185,11 @@
 		C1D948C62C7770750008F7CA /* WalletWise */ = {
 			isa = PBXGroup;
 			children = (
+				BBA27C382D399179002F3383 /* App */,
 				C1C1BC812C78D83C0072ABA3 /* View */,
 				C1C1BC7C2C78D3B50072ABA3 /* Extensions */,
 				C1D948DE2C7775F10008F7CA /* ViewModel */,
 				C1D948DD2C7775EB0008F7CA /* Model */,
-				C1D948D52C7774D40008F7CA /* App */,
-				C1D948C72C7770750008F7CA /* WalletWiseApp.swift */,
 				C1D948D62C7774DC0008F7CA /* Manager */,
 				C1D948C92C7770750008F7CA /* ContentView.swift */,
 				C1D948CB2C7770760008F7CA /* Assets.xcassets */,
@@ -203,13 +204,6 @@
 				C1D948CE2C7770760008F7CA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		C1D948D52C7774D40008F7CA /* App */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = App;
 			sourceTree = "<group>";
 		};
 		C1D948D62C7774DC0008F7CA /* Manager */ = {
@@ -308,6 +302,9 @@
 			);
 			dependencies = (
 			);
+			fileSystemSynchronizedGroups = (
+				BBA27C382D399179002F3383 /* App */,
+			);
 			name = WalletWise;
 			packageProductDependencies = (
 				C12D09692C7CCB69002A2331 /* SwiftUICharts */,
@@ -380,7 +377,6 @@
 				C1C1BC882C78E1E50072ABA3 /* StatisticsView.swift in Sources */,
 				C1D948EA2C777AF90008F7CA /* BalanceView .swift in Sources */,
 				C1AB0E262C7D032700BCE30E /* LaunchManager .swift in Sources */,
-				C1D948C82C7770750008F7CA /* WalletWiseApp.swift in Sources */,
 				C1209F972C7B56B500D48EC6 /* TransactionListCell.swift in Sources */,
 				C1D948EE2C7783870008F7CA /* WeeklyExpenses.swift in Sources */,
 				C1AB0E282C7D049900BCE30E /* UserSettings.swift in Sources */,
