@@ -35,7 +35,7 @@ class TransactionViewModel: ObservableObject {
                              category: TransactionCategory(rawValue: entity.category ?? "") ?? .shopping,
                              price: entity.price,
                              date: entity.date ?? Date())
-        }
+        }.sorted(by: { $0.date > $1.date })
     }
     
     func groupTransactionByDay() -> [Date: [TransactionModel]] {
