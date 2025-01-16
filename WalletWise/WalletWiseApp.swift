@@ -19,10 +19,12 @@ struct WalletWiseApp: App {
                 FirstLaunchView()
                     .environmentObject(userSettings)
                     .environmentObject(viewModel)
+                    .preferredColorScheme(.dark)
             } else {
                 HomeView(index: 0)
                     .environmentObject(viewModel)
                     .environmentObject(userSettings)
+                    .preferredColorScheme(.dark)
             }
         }
     }
